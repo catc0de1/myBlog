@@ -1,0 +1,107 @@
+---
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+import 'swiper/css/bundle';
+
+const { post: blogPosts } = Astro.props;
+type BlogPost = CollectionEntry<'blog'>;
+---
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+    {
+      blogPosts.map((post: BlogPost) => (
+        <div
+          class="swiper-slide"
+          style={`background-image: url(${post.data.image}); background-size: cover; background-position: center;`}
+        >
+          <div class="title">
+            <a href={`blog/${post.slug}`}>{post.data.title}</a>
+          </div>
+          <div class="meta">
+            <p>{post.data.author}</p>
+            <span> &bull; </span>
+            <time datetime={post.data.publishedAt}>
+              {post.data.publishedAt}
+            </time>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script>
+  import Swiper from 'swiper/bundle';
+  new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
+
+<style>
+  .swiper {
+    width: 100%;
+    height: 400px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* text-align: center; */
+    font-size: 1.2rem;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .swiper-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+  }
+
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .title a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .title a:hover {
+    text-decoration: underline;
+  }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fon-size: 1em;
+  }
+
+  .meta p,
+  .meta time {
+    margin: 0 10px;
+  }
+</style>
