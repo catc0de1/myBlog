@@ -8,7 +8,7 @@ isPinned: false
 excerpt: 'EJS adalah templating engine sederhana untuk Node.js yang cocok untuk membuat halaman HTML dinamis secara cepat. Ideal untuk proyek kecil dan dashboard, tapi kurang cocok untuk aplikasi modern yang kompleks dan interaktif.'
 ---
 
-````markdown
+
 # Apa Itu EJS?
 
 [EJS (Embedded JavaScript Templates)](https://ejs.co) adalah templating engine sederhana untuk Node.js yang memungkinkan kamu menyisipkan kode JavaScript ke dalam file HTML. EJS digunakan untuk merender halaman HTML dinamis di sisi server — sangat populer dalam arsitektur tradisional server-rendered.
@@ -25,9 +25,9 @@ Meskipun sederhana, EJS memiliki beberapa keunggulan yang membuatnya tetap relev
 
 Dengan sintaks yang mirip HTML dan logika JavaScript yang familiar, EJS sangat cocok untuk pemula.
 
-```ejs
+```html
 <h1>Selamat datang, <%= user.name %>!</h1>
-````
+```
 
 > **Contoh nyata:** Seorang mahasiswa bisa membuat halaman dinamis dari backend Express hanya dalam 5 menit tanpa framework frontend.
 
@@ -97,4 +97,4 @@ EJS adalah templating engine ringan dan sederhana — cocok sebagai jembatan awa
 Namun untuk aplikasi modern dan kompleks, **EJS cepat terasa usang dan membatasi**. Tidak ada reactivity, tidak ada komponen, dan tidak ada modularisasi yang layak untuk proyek besar.
 
 **Jadi, apakah EJS cocok untukmu?**
-Jika kamu pemula yang ingin memahami dasar web dinamis server-side dengan Express, **EJS adalah titik awal yang bagus**. Tapi kalau kamu sedang membangun sesuatu yang interaktif, scalable, dan kolaboratif — **beralihlah ke teknologi modern seperti React, Astro, atau Vue.**
+Jika kamu pemula yang ingin memahami dasar web dinamis server-side dengan Express, **EJS adalah titik awal yang bagus**. Tapi kalau kamu sedang membangun sesuatu yang interaktif, scalable, dan kolaboratif — **beralihlah ke teknologi modern seperti React, Vue, Angular, atau Svelte**
