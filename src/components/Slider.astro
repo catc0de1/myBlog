@@ -17,7 +17,7 @@ type BlogPost = CollectionEntry<'blog'>;
           style={`background-image: url(${post.data.image}); background-size: cover; background-position: center;`}
         >
           <div class="slide-overlay">
-            <div class="title">
+            <div class="title fs-2">
              <a href={`blog/${post.slug}`}>{post.data.title}</a>
             </div>
             <div class="meta">
@@ -95,7 +95,7 @@ type BlogPost = CollectionEntry<'blog'>;
   }
 
   .title {
-    font-size: 2em;
+    /* font-size: 2em; */
     font-weight: bold;
     margin-bottom: 10px;
     /* text-align: center; */
