@@ -1,5 +1,5 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { Image } from 'astro:assets';
 
 import Layout from '../../layouts/Layout.astro';
@@ -22,6 +22,11 @@ export async function getStaticPaths() {
     })
   );
 
+  // return blogPosts.map(entry => ({
+  //   params: { slug: entry.id },
+  //   props: { entry },
+  // }));
+
   return paths;
 }
 
@@ -29,6 +34,9 @@ const { post, Content } = Astro.props as {
   post: CollectionEntry<'blog'>,
   Content: any
 };
+
+const { remarkPluginFrontmatter } = await render(post);
+
 ---
 
 <Layout title={post.data.title}>
@@ -46,10 +54,12 @@ const { post, Content } = Astro.props as {
           <p>
             {post.data.author}
           </p>
-          <div>
+          <div class="meta-row">
             <time datetime={post.data.publishedAt}>
               {post.data.publishedAt}
             </time>
+            <span> &bull; </span>
+            <p>{remarkPluginFrontmatter.minutesRead}</p>
           </div>
         </div>
       </div>
@@ -126,6 +136,16 @@ const { post, Content } = Astro.props as {
 
   article .meta .text div:last-child span {
     margin: 0 0.5rem;
+  }
+
+  article .meta-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  article .meta-row p {
+    margin: 0;
   }
 
   article .content-header h1 {
