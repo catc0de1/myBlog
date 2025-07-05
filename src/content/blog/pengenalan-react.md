@@ -1,6 +1,6 @@
 ---
 title: 'React: Library UI Paling Populer yang Bisa Menjebak atau Mengangkatmu'
-publishedAt: '7 Juli 2025'
+publishedAt: '5 Juli 2025'
 author: 'Iyan Zuli'
 image: 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVhY3R8ZW58MHx8MHx8fDA%3D'
 category: 'Frontend library'

@@ -31,9 +31,7 @@ type BlogPost = CollectionEntry<'blog'>;
     }}
   />
 
-	<div style="margin-top: 56px;">
-		<Slider post={blogPosts.filter((post) => post.data.isPinned)} />
-	</div>
+	<Slider post={blogPosts.filter((post) => post.data.isPinned)} />
 
 	<main class="container mt-content">
 		<h1 class="fs-1 mb-5">Articles</h1>

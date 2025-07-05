@@ -1,6 +1,6 @@
 ---
 title: 'C#: Hanya untuk Software Developer Serius, Stabil, dan Siap untuk Proyek Skala Besar'
-publishedAt: '7 Juli 2025'
+publishedAt: '5 Juli 2025'
 author: 'Iyan Zuli'
 image: 'https://images.unsplash.com/photo-1625459201773-9b2386f53ca2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YyUyMGxhbmd1YWdlfGVufDB8fDB8fHww'
 category: 'Programming Language'

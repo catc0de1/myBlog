@@ -1,6 +1,6 @@
 ---
 title: 'Next.js: Apakah Framework React Ini Terlalu Besar untuk Proyekmu?'
-publishedAt: '7 Juli 2025'
+publishedAt: '5 Juli 2025'
 author: 'Iyan Zuli'
 image: 'https://images.unsplash.com/photo-1687603921109-46401b201195?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmVhY3QuanN8ZW58MHx8MHx8fDA%3D'
 category: 'Frontend fraamework'

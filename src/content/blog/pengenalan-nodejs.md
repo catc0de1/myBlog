@@ -1,6 +1,6 @@
 ---
 title: 'Node.js: Cepat, Ringan, Fleksibel — Tapi Bisa Jadi Boomerang Tanpa Struktur'
-publishedAt: '7 Juli 2025'
+publishedAt: '5 Juli 2025'
 author: 'Iyan Zuli'
 image: 'https://images.unsplash.com/photo-1667372393086-9d4001d51cf1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHx8MA%3D%3D'
 category: 'Runtime environment'
