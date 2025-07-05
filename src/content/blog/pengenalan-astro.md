@@ -4,7 +4,7 @@ publishedAt: '7 Juli 2025'
 author: 'Iyan Zuli'
 image: 'https://image.unsplash.com'
 category: 'Technologies'
-isPinned: false
+isPinned: true
 excerpt: 'Astro.js adalah framework modern untuk membangun website yang cepat dan ringan dengan pendekatan komponen tanpa JavaScript berlebih di sisi klien.'
 ---
 

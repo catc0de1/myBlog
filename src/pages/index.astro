@@ -1,12 +1,38 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const blogPosts = await getCollection('blog');
+type BlogPost = CollectionEntry<'blog'>;
 ---
 
-<Layout title="Astro">
-	<h1>Astro</h1>
-	<!-- <Welcome /> -->
+<Layout title="Homepage">
+	<h1>Homepage</h1>
+	
+	<h2>Slider Posts</h2>
+	<ul>
+		{
+			blogPosts
+				.filter((post: BlogPost) => post.data.isPinned)
+				.map((post: BlogPost) => (
+					<li>
+						<a href={`/blog/${post.slug}`}>{post.data.title}</a>
+					</li>
+				))
+		}
+	</ul>
+
+	<h2>Articles</h2>
+	<ul>
+		{
+			blogPosts
+				.map((post: BlogPost) => (
+					<li>
+						<a href={`/blog/${post.slug}`}>{post.data.title}</a>
+					</li>
+				))
+		}
+	</ul>
 </Layout>
