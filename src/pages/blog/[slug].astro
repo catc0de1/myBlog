@@ -1,0 +1,43 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+
+import Layout from '../../layouts/Layout.astro';
+import iyan from '../../assets/iyan.webp';
+
+type BlogPost = CollectionEntry<'blog'>;
+
+export async function getStaticPaths() {
+  const blogPosts = await getCollection('blog');
+  const paths = await Promise.all(
+    blogPosts.map(async (post: BlogPost) => {
+      const rendered = await post.render();
+      return {
+        params: { slug: post.slug },
+        props: { 
+          post,
+          Content: rendered.Content
+        }
+      };
+    })
+  );
+
+  return paths;
+}
+
+const { post, Content } = Astro.props as { 
+  post: CollectionEntry<'blog'>,
+  Content: any
+};
+---
+
+<Layout title={post.data.title}>
+  <article>
+    <h1>{post.data.title}</h1>
+    <p>By {post.data.author} on {post.data.publishedAt}</p>
+    <Image src={iyan} alt="Author Image" />
+    {post.data.image && <Image src={post.data.image} alt={post.data.image} />}
+    <Content />
+  </article>
+
+</Layout>

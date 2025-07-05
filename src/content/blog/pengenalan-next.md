@@ -2,7 +2,7 @@
 title: 'Pengenalan Next.js'
 publishedAt: '7 Juli 2025'
 author: 'Iyan Zuli'
-image: 'https://image.unsplash.com'
+image: ''
 category: 'Technologies'
 isPinned: false
 excerpt: 'Next.js adalah framework React populer untuk membangun aplikasi web yang cepat, skalabel, dan SEO-friendly dengan fitur seperti SSR, SSG, dan API routes.'
@@ -12,7 +12,7 @@ excerpt: 'Next.js adalah framework React populer untuk membangun aplikasi web ya
 
 [Next.js](https://nextjs.org/) adalah framework berbasis React yang dirancang untuk membangun aplikasi web modern dengan performa tinggi. Dibuat oleh Vercel, Next.js menyederhanakan proses pengembangan dengan menyediakan fitur bawaan seperti server-side rendering (SSR), static site generation (SSG), dan routing otomatis.
 
-## Fitur Unggulan Next.js
+## Keunggulan Next.js
 
 Beberapa kelebihan utama dari Next.js meliputi:
 
@@ -24,6 +24,15 @@ Beberapa kelebihan utama dari Next.js meliputi:
 - **Built-in CSS & Sass Support**: Langsung mendukung styling tanpa konfigurasi tambahan.
 - **Incremental Static Regeneration (ISR)**: Menggabungkan keunggulan SSR dan SSG untuk update konten tanpa rebuild penuh.
 
+## Kelemahan Next.js
+
+Walaupun sangat powerful, Next.js juga memiliki beberapa kelemahan yang perlu diperhatikan:
+
+- **Ketergantungan pada React**: Karena dibangun di atas React, kamu harus memahami ekosistem React terlebih dahulu.
+- **Ukuran bundle yang besar**: Jika tidak dioptimalkan dengan baik, ukuran JavaScript yang dikirim ke klien bisa cukup besar.
+- **Kompleksitas konfigurasi**: Fitur-fitur seperti ISR, middleware, atau internationalization bisa menjadi kompleks untuk pemula.
+- **Kustomisasi terbatas pada beberapa aspek**: Misalnya, dalam routing dan struktur proyek yang sangat bergantung pada konvensi.
+
 ## Kapan Menggunakan Next.js?
 
 Gunakan Next.js jika kamu:
@@ -32,21 +41,6 @@ Gunakan Next.js jika kamu:
 - Ingin membuat aplikasi React dengan SSR atau SSG.
 - Ingin proyek dengan backend ringan tanpa membuat server terpisah.
 - Membutuhkan skalabilitas dan performa tinggi.
-
-## Contoh Struktur Proyek
-
-```
-my-next-app/
-├── pages/
-│ ├── index.js
-│ └── about.js
-├── public/
-├── styles/
-│ └── globals.css
-├── next.config.js
-└── package.json
-```
-
 
 ## Kesimpulan
 
