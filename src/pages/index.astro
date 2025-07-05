@@ -35,10 +35,9 @@ type BlogPost = CollectionEntry<'blog'>;
 		<Slider post={blogPosts.filter((post) => post.data.isPinned)} />
 	</div>
 
-	<!-- <h2>Articles</h2> -->
-
 	<main class="container mt-content">
-		<div class="row row-cols-1 row-cols-md-3 g-4">
+		<h1 class="fs-1 mb-5">Articles</h1>
+		<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
 			{
 				blogPosts
 					.map((post: BlogPost) => (
@@ -50,4 +49,5 @@ type BlogPost = CollectionEntry<'blog'>;
 			}
 		</div>
 	</main>
+
 </Layout>

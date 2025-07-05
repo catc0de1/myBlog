@@ -1,0 +1,26 @@
+---
+---
+
+<button type="button" class="btn btn-primary btn-lg rounded-circle back-to-top" id="backToTopBtn" title="Back to Top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<style>
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  z-index: 999;
+}
+</style>
+
+<script>
+  window.onscroll = function() {
+    document.getElementById("backToTopBtn").style.display = 
+      (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
+  };
+  document.getElementById("backToTopBtn").onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+</script>
