@@ -3,15 +3,17 @@ import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Card from '../components/Card.astro';
 
 const blogPosts = await getCollection('blog');
 type BlogPost = CollectionEntry<'blog'>;
 ---
 
 <Layout title="Homepage">
-	<h1>Homepage</h1>
-	
-	<h2>Slider Posts</h2>
+	<Header />
+
+	<!-- <h2>Slider Posts</h2>
 	<ul>
 		{
 			blogPosts
@@ -22,17 +24,21 @@ type BlogPost = CollectionEntry<'blog'>;
 					</li>
 				))
 		}
-	</ul>
+	</ul> -->
 
-	<h2>Articles</h2>
-	<ul>
-		{
-			blogPosts
-				.map((post: BlogPost) => (
-					<li>
-						<a href={`/blog/${post.slug}`}>{post.data.title}</a>
-					</li>
-				))
-		}
-	</ul>
+	<!-- <h2>Articles</h2> -->
+
+	<main class="container mt-content">
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+			{
+				blogPosts
+					.map((post: BlogPost) => (
+						<div class="col">
+							<Card post={post} />
+							{/* <a href={`/blog/${post.slug}`}>{post.data.title}</a> */}
+						</div>
+					))
+			}
+		</div>
+	</main>
 </Layout>

@@ -2,7 +2,7 @@
 title: 'Pengenalan Astro.js'
 publishedAt: '7 Juli 2025'
 author: 'Iyan Zuli'
-image: ''
+image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D'
 category: 'Technologies'
 isPinned: true
 excerpt: 'Astro.js adalah framework modern untuk membangun website yang cepat dan ringan dengan pendekatan komponen tanpa JavaScript berlebih di sisi klien.'
