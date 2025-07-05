@@ -32,12 +32,131 @@ const { post, Content } = Astro.props as {
 ---
 
 <Layout title={post.data.title}>
-  <article>
-    <h1>{post.data.title}</h1>
-    <p>By {post.data.author} on {post.data.publishedAt}</p>
-    <Image src={iyan} alt="Author Image" />
-    {post.data.image && <Image src={post.data.image} alt={post.data.image} />}
-    <Content />
+
+  <article class="mt-content">
+    <div class="content-header">
+      <h1>
+        {post.data.title}
+      </h1>
+      <div class="meta">
+        <div class="image">
+          <Image src={iyan} alt="Author Image" />
+        </div>
+        <div class="text">
+          <p>
+            {post.data.author}
+          </p>
+          <div>
+            <time datetime={post.data.publishedAt}>
+              {post.data.publishedAt}
+            </time>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="picture">
+      <Image inferSize src={post.data.image} alt={post.data.image} />
+    </div>
+    <div class="content">
+      <Content />
+    </div>
   </article>
 
 </Layout>
+
+<style>
+  article {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    max-width: 64rem;
+    padding: 6rem 2rem;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+
+  article .content-header {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  article .meta {
+    display: flex;
+    /* align-items: center; */
+    /* gap: 1rem; */
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  article .meta > div {
+    margin-right: 1rem;
+  }
+
+  article .meta .image {
+    width: 52px;
+    height: 52px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  article .meta .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9999px;
+  }
+
+  article .meta .text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  article .meta .text > p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  article .meta .text div:last-child span {
+    margin: 0 0.5rem;
+  }
+
+  article .content-header h1 {
+    max-width: 768px;
+  }
+
+  article.picture {
+    /* width: 100%; */
+    height: 500px;
+    /* overflow: hidden; */
+    /* margin-top: 1rem; */
+    border-radius: 0.5rem;
+  }
+
+  article .picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  article #disqus_thread {
+    margin-top: 4rem;
+  }
+
+  article .astro-social-share {
+    background-color: aqua;
+    /* margin-top: 2rem; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 1rem; */
+  }
+
+</style>

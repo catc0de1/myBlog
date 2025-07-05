@@ -5,7 +5,7 @@ const blog = defineCollection({
     title: z.string(),
     isPinned: z.boolean(),
     author: z.string(),
-    image: z.string().optional(),
+    image: z.string(),
     publishedAt: z.string(),
     category: z.string(),
     excerpt: z.string().optional(),

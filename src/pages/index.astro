@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
 import Card from '../components/Card.astro';
 
 const blogPosts = await getCollection('blog');
@@ -11,7 +10,6 @@ type BlogPost = CollectionEntry<'blog'>;
 ---
 
 <Layout title="Homepage">
-	<Header />
 
 	<!-- <h2>Slider Posts</h2>
 	<ul>
