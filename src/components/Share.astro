@@ -1,0 +1,55 @@
+---
+// documentation on https://github.com/silent1mezzo/astro-social-share?tab=readme-ov-file#readme
+import { SocialShare } from "astro-social-share";
+import {
+  FacebookShareButton,
+  HackerNewsShareButton,
+  LinkedInShareButton,
+  TwitterShareButton,
+  WhatsAppShareButton,
+} from "astro-social-share";
+
+const BUTTONS = [
+  TwitterShareButton,
+  FacebookShareButton,
+  HackerNewsShareButton,
+  LinkedInShareButton,
+  WhatsAppShareButton,
+];
+---
+
+<div class="social-share">
+  <p>Share:</p>
+  <SocialShare
+    buttons={BUTTONS}
+    title="Share this post"
+    description="Share this post on your favorite social media platforms."
+  />
+</div>
+
+<style>
+  .social-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    /* gap: 0.5rem; */
+  }
+
+  .social-share p {
+    margin: 0;
+    margin-right: 0.5rem;
+  }
+
+  .social-share .astro-social-share {
+    display: flex;
+    justify-content: center;
+    /* gap: 0.5rem; */
+  }
+
+  .social-share .astro-social-share a {
+    display: block;
+    width: 20px;
+    margin: 0 0.5rem;
+  }
+</style>

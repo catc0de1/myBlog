@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import { SEO } from "astro-seo";
 
 import Layout from '../../layouts/Layout.astro';
+import Share from '../../components/Share.astro';
 import iyan from '../../assets/iyan.webp';
 
 type BlogPost = CollectionEntry<'blog'>;
@@ -22,12 +23,7 @@ export async function getStaticPaths() {
       };
     })
   );
-
-  // return blogPosts.map(entry => ({
-  //   params: { slug: entry.id },
-  //   props: { entry },
-  // }));
-
+  
   return paths;
 }
 
@@ -79,6 +75,8 @@ const { remarkPluginFrontmatter } = await render(post);
       </div>
     </div>
 
+    <Share />
+
     <div class="picture">
       <Image inferSize src={post.data.image} alt={post.data.image} />
     </div>
@@ -86,6 +84,8 @@ const { remarkPluginFrontmatter } = await render(post);
       <Content />
     </div>
   </article>
+
+  <Share />
 
 </Layout>
 
