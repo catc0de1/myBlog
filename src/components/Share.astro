@@ -5,17 +5,21 @@ import {
   FacebookShareButton,
   HackerNewsShareButton,
   LinkedInShareButton,
+  ThreadsShareButton,
   TwitterShareButton,
   WhatsAppShareButton,
 } from "astro-social-share";
 
 const BUTTONS = [
+  WhatsAppShareButton,
   TwitterShareButton,
   FacebookShareButton,
-  HackerNewsShareButton,
+  ThreadsShareButton,
   LinkedInShareButton,
-  WhatsAppShareButton,
+  HackerNewsShareButton,
 ];
+
+const { image } = Astro.props;
 ---
 
 <div class="social-share">
