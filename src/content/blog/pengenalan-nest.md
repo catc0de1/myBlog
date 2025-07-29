@@ -1,7 +1,7 @@
 ---
 title: 'NestJS: Arsitektur Backend yang Tertata Rapi — Tapi, Apakah Kamu Siap dengan Kedewasaannya?'
 publishedAt: '5 Juli 2025'
-author: 'Iyan Zuli'
+author: 'ChatGPT'
 image: 'https://images.unsplash.com/photo-1694375073673-fc3f0b706d8c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhdCUyMG9uJTIwY29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D'
 category: 'Backend framework'
 isPinned: true

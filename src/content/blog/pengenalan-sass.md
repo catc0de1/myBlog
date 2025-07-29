@@ -1,7 +1,7 @@
 ---
 title: 'SASS: Senjata Styling Profesional yang Tak Selalu Perlu'
 publishedAt: '5 Juli 2025'
-author: 'Iyan Zuli'
+author: 'ChatGPT'
 image: 'https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3NzfGVufDB8fDB8fHww'
 category: 'Styling tool'
 isPinned: false
