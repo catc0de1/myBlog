@@ -1,6 +1,6 @@
 ---
 title: 'EJS: Sederhana, Cepat, tapi Bukan untuk Semua Jenis Proyek'
-publishedAt: '3 Agustus 2025'
+publishedAt: '5 Agustus 2025'
 author: 'Iyan Zuli'
 image: 'https://images.unsplash.com/photo-1662116137257-6e5793c365ec?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGh0bWx8ZW58MHx8MHx8fDA%3D'
 category: 'Templating engine'
@@ -17,8 +17,8 @@ Dengan sintaks mirip HTML, EJS menjadi pilihan utama untuk banyak proyek Express
 
 EJS juga memiliki fitur layoout, partials, dan block dengan library atau package [ejs-mate](https://www.npmjs.com/package/ejs-mate). Penggunaan library ejs-mate memungkinkan EJS untuk menggunakan prinsip framework frontend pada umumnya seperti react, Next.js, dan sejenisnya walau tetap hanya sebatas library (tidak memiliki kerangka kerja tersendiri).
 
-Btw, kalau mau lihat website yang kubuat dengan EJS bisa kunjungi link berikut:
-[https://github.com/CatC0de1/SurabayaBestPoint](https://github.com/CatC0de1/SurabayaBestPoint)<br/>
+Btw, kalau mau lihat website yang kubuat dengan EJS bisa kunjungi resipoteri GitHub berikut:
+[CatC0de1/SurabayaBestPoint](https://github.com/CatC0de1/SurabayaBestPoint)<br/>
 (Link produksi nya ada di deskripsi resipoteri jika masih ada😅)
 
 ---
@@ -31,10 +31,8 @@ Meskipun sederhana, EJS memiliki beberapa keunggulan yang membuatnya tetap relev
 
    Dengan sintaks yang mirip HTML dan logika JavaScript yang familiar, EJS sangat cocok untuk pemula.
 
-   **Contoh Penggunaan:**
-   ```html
-   <h1>Selamat datang, <%= user.name %>!</h1>
-   ```
+   **Contoh Penggunaan:**<br/>
+   `<h1>Halo, <%= user.name %>!</h1>`
 
    **Funfact** Seorang mahasiswa bisa membuat halaman dinamis dari backend Express hanya dalam 5-10 menit tanpa framework frontend.
 
@@ -82,17 +80,17 @@ Gunakan EJS jika kamu:
   Jika ingin belajar konsep backend + frontend server-rendered, terutama menggunakan Express.js, EJS sangat kurekomendasikan sebagai pemula yang ingin belajar SSR Express.js.
 
 * **Proyek Kecil**<br/>
-  Membangun proyek kecil seperti CRUD, dashboard internal, admin panel. Bisa juga membuat prototipe cepat yang contohnya bisa kamu akses di resipotery berikut:
+  Membangun proyek kecil seperti CRUD, dashboard internal, admin panel. Bisa juga membuat prototipe cepat yang contohnya bisa kamu akses di resipotery GitHub berikut:
   
   Resipoteri frontend (EJS):<br/>
-  [https://github.com/UniversitasNegeriSurabaya-Iyan165/oop_kafe-frontend](https://github.com/UniversitasNegeriSurabaya-Iyan165/oop_kafe-frontend)
+  [UniversitasNegeriSurabaya-Iyan165/oop_kafe-frontend](https://github.com/UniversitasNegeriSurabaya-Iyan165/oop_kafe-frontend)
   
   Resipoteri backend (Express):<br/>
-  [https://github.com/UniversitasNegeriSurabaya-Iyan165/oop_kafe-backend](https://github.com/UniversitasNegeriSurabaya-Iyan165/oop_kafe-backend)
+  [UniversitasNegeriSurabaya-Iyan165/oop_kafe-backend](https://github.com/UniversitasNegeriSurabaya-Iyan165/oop_kafe-backend)
 
   *Btw code nya masih kacau, karena dipaksa OOP (Object Oriented Programming). Maklum, waktu itu masih pemula*😅
 
-  Selain itu, bisa juga untuk membuat sistem dengan resource server terbatas (VPS kecil) seperti resipotery backend yang kucantumkan sebelumnya.
+  Selain itu, bisa juga untuk membuat sistem dengan resource server terbatas (VPS kecil).
 
 ## Kapan Sebaiknya **Tidak** Menggunakan EJS?
 
@@ -111,9 +109,9 @@ Hindari EJS jika kamu:
 
 ## Kesimpulan
 
-EJS adalah templating engine ringan dan sederhana, cocok sebagai jembatan awal belajar tentang bagaimana server mengirimkan data ke tampilan HTML. Dalam skenario tertentu seperti dashboard kecil, proyek pribadi, atau pembelajaran Express, EJS masih lumayan lah.
+EJS adalah templating engine ringan dan sederhana, cocok sebagai jembatan awal belajar tentang bagaimana server mengirimkan data ke tampilan HTML. Dalam skenario tertentu seperti dashboard kecil, proyek pribadi, atau pembelajaran Express, EJS masih **lumayan** lah.
 
-Namun untuk aplikasi modern dan kompleks, **EJS cepat terasa kudet, kuno, jadul**. Tidak ada reactivity, tidak ada komponen, tidak ada framework, dan tidak ada modularisasi yang layak untuk proyek besar.
+Namun untuk aplikasi modern dan kompleks, EJS rasanya seperti **kudet**, **kuno**, **jadul**. Tidak ada reactivity, tidak ada komponen, tidak ada framework, dan tidak ada modularisasi yang layak untuk proyek besar.
 
 **Jadi, apakah EJS cocok untukmu?**<br/>
 
