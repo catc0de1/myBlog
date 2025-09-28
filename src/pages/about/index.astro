@@ -1,0 +1,65 @@
+---
+import { SEO } from "astro-seo";
+import { Image } from 'astro:assets';
+
+import Layout from '../../layouts/Layout.astro';
+import Share from '../../components/Share.astro';
+import iyan from '../../assets/iyan.webp';
+---
+
+<Layout title="Home">
+
+	<!-- documentation on https://github.com/jonasmerlin/astro-seo -->
+	<SEO
+		slot="seo"
+    title="ZtackDev - About"
+    description=
+			{`
+				About ZtackDev - platform yang dibuat oleh Iyan Zuli Armanda untuk berbagi berita terbaru, tutorial, dan sumber daya tentang teknologi perangkat lunak berdasarkan pengalaman dan pengetahuan di bidang ini.
+			`}
+    openGraph={{
+      basic: {
+        title: "ZtackDev - About",
+        type: "Website",
+        image: iyan.src,
+      }
+    }}
+  />
+
+
+	<main class="container mt-content col-md-10 col-xl-8 offset-md-1 offset-xl-2 text-justify">
+
+    <h1 class="fs-1 my-5">About ZtackDev</h1>
+    <Image src={iyan} alt="Author Image" width="200" class="img-fluid rounded float-start me-3 mb-2" />
+    
+    <p class="mb-4">
+      <span class="fw-bolder">ZtackDev adalah platform yang dibuat oleh Iyan Zuli Armanda untuk berbagi berita terbaru tentang pengembangan perangkat lunak berdasarkan pengalaman dan pengetahuan di bidang ini.</span>
+      Lingkup ZtackDev mencakup berbagai topik, termasuk pengenalan teknologi, perbandingan teknologi satu dengan yang lain, tutorial, tips dan trik sesuai best pratice atau habit, hingga cheatsheet yang dapat membantu pengembang dalam pekerjaan sehari-hari.
+      ZtackDev lebih fokus pada teknologi perangkat lunak seperti website, aplikasi mobile, aplikasi desktop, hingga aplikasi sistem. Sedangkan topiknya mencakup berbagai bahasa pemrograman, framework, pustaka, alat pengembangan, dan praktik terbaik dalam pengembangan perangkat lunak.
+      Bahan dalam pembuatan blog ini berasal dari riset terkini, pengalaman pribadi, serta kontribusi dari komunitas pengembang yang ingin berbagi pengetahuan mereka.
+    </p>
+    <p class="mb-4">
+      Seperti yang saya bilang, ZtackDev dibuat oleh saya, Iyan Zuli Armanda. Saya adalah seorang pengembang perangkat lunak di berbagai platform seperti website, mobile, desktop, dan sistem.
+      Saya memiliki pengalaman dalam berbagai bahasa pemrograman, framework, dan alat pengembangan.
+      Pengalaman saya didapatkan dari berbagai proyek yang telah saya kerjakan, baik secara profesional maupun pribadi.
+      Saya juga aktif dalam komunitas pengembang, mengikuti perkembangan terbaru dalam teknologi perangkat lunak.
+      Kunjungi website saya di <a href="https://iyan-zuli-armanda.netlify.app" target="_blank" rel="noopener noreferrer">iyan-zuli-armanda</a> untuk mengetahui lebih lanjut tentang pengalaman dan keahlian saya.
+    </p>
+    <p class="mb-5">
+      Terima kasih telah mengunjungi ZtackDev. Saya berharap Anda menemukan informasi yang berguna dan bermanfaat di sini. Jangan ragu untuk menghubungi saya jika Anda memiliki pertanyaan atau saran :)
+    </p>
+
+    <figure class="card p-3">
+      <blockquote class="blockquote">
+        <p class="fst-italic">"Jika ingin menjadi developer, maka siapkan waktu untuk terus belajar dan beradaptasi dengan perkembangan teknologi. <span class="fw-semibold">And we ain't limit yet.</span>"</p>
+      </blockquote>
+      <figcaption class="blockquote-footer mt-2">
+        IT Engineer, <cite title="Source Title">Iyan Zuli Armanda</cite>
+      </figcaption>
+    </figure>
+
+    <Share />
+
+  </main>
+
+</Layout>
