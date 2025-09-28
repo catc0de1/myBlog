@@ -3,9 +3,12 @@ title: 'Astro.js: Masa Depan Website Statis yang Lebih Cepat, Lebih Ringan, dan 
 publishedAt: '5 Juli 2025'
 author: 'Iyan Zuli'
 image: 'https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D'
-category: 'Pengenalan Teknologi'
+category: 'Pengenalan'
 isPinned: true
 excerpt: 'Astro.js adalah framework modern untuk membangun website statis yang super cepat dan ringan dengan pendekatan islands architecture. Cocok untuk blog, dokumentasi, dan portofolio tanpa JavaScript berlebih.'
+tags:
+  - astro
+  - javasript
 ---
 
 # Apa Itu Astro.js? Kenapa Lagi Populer?

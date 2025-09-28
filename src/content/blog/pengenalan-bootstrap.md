@@ -3,9 +3,12 @@ title: 'Bootstrap CSS: Framework CSS yang siap saji, tinggal dipakai'
 publishedAt: '5 September 2025'
 author: 'Iyan Zuli'
 image: 'https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-category: 'Pengenalan Teknologi'
+category: 'Pengenalan'
 isPinned: true
 excerpt: 'Bootstrap CSS adalah framework CSS untuk membangun style dengan cepat karena sudah disediakan komponen-komponen UI nya. Cocok untuk kebutuhan styling yang cepat.'
+tags:
+  - bootstrap
+  - css
 ---
 
 # Apa Itu Bootstrap CSS? Tinggal copas terus?

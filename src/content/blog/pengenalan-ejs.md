@@ -3,9 +3,13 @@ title: 'EJS: Sederhana, Cepat, tapi Bukan untuk Semua Jenis Proyek'
 publishedAt: '5 Agustus 2025'
 author: 'Iyan Zuli'
 image: 'https://images.unsplash.com/photo-1662116137257-6e5793c365ec?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGh0bWx8ZW58MHx8MHx8fDA%3D'
-category: 'Pengenalan Teknologi'
+category: 'Pengenalan'
 isPinned: false
 excerpt: 'EJS adalah templating engine sederhana untuk Node.js yang cocok untuk membuat halaman HTML dinamis secara cepat. Ideal untuk proyek kecil dan dashboard, tapi kurang cocok untuk aplikasi modern yang kompleks dan interaktif.'
+tags:
+  - ejs
+  - html
+  - javascript
 ---
 
 # Hah? EJS? Apa itu?
