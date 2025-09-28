@@ -12,13 +12,13 @@ type BlogPost = CollectionEntry<'blog'>;
   <div class="swiper-wrapper">
     {
       blogPosts.map((post: BlogPost) => (
-        <div
-          class="swiper-slide"
+        <a href={`blog/${post.slug}`}
+          class="swiper-slide text-decoration-none text-white"
           style={`background-image: url(${post.data.image}); background-size: cover; background-position: center;`}
         >
           <div class="slide-overlay">
             <div class="title fs-2">
-             <a href={`blog/${post.slug}`}>{post.data.title}</a>
+             <p>{post.data.title}</p>
             </div>
             <div class="meta">
               <p>{post.data.author}</p>
@@ -28,7 +28,7 @@ type BlogPost = CollectionEntry<'blog'>;
               </time>
             </div>
           </div>
-        </div>
+        </a>
       ))
     }
   </div>
@@ -63,7 +63,6 @@ type BlogPost = CollectionEntry<'blog'>;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     font-size: 1.2rem;
     padding: 20px;
     box-sizing: border-box;
@@ -82,9 +81,6 @@ type BlogPost = CollectionEntry<'blog'>;
   }
 
   .slide-overlay {
-    background: rgba(0,0,0,0.1);
-    backdrop-filter: blur(1px);
-    border-radius: 1rem;
     padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
@@ -92,22 +88,6 @@ type BlogPost = CollectionEntry<'blog'>;
     justify-content: center;
     max-width: 80%;
     margin: auto;
-  }
-
-  .title {
-    /* font-size: 2em; */
-    font-weight: bold;
-    margin-bottom: 10px;
-    /* text-align: center; */
-  }
-
-  .title a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .title a:hover {
-    text-decoration: underline;
   }
 
   .meta {
