@@ -10,6 +10,7 @@ tags:
   - ejs
   - html
   - javascript
+index: 2
 ---
 
 # Hah? EJS? Apa itu?

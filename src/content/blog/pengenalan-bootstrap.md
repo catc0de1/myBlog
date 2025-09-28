@@ -9,6 +9,7 @@ excerpt: 'Bootstrap CSS adalah framework CSS untuk membangun style dengan cepat 
 tags:
   - bootstrap
   - css
+index: 3
 ---
 
 # Apa Itu Bootstrap CSS? Tinggal copas terus?

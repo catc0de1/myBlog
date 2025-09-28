@@ -9,6 +9,7 @@ excerpt: 'Astro.js adalah framework modern untuk membangun website statis yang s
 tags:
   - astro
   - javasript
+index: 1
 ---
 
 # Apa Itu Astro.js? Kenapa Lagi Populer?

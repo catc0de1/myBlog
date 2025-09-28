@@ -39,6 +39,7 @@ type BlogPost = CollectionEntry<'blog'>;
 		<div class="d-flex flex-column gap-3">
 			{
 				blogPosts
+					.sort((a, b) => (b.data.index ?? 0) - (a.data.index ?? 0))
 					.map((post: BlogPost) => (
 						<div class="col">
 							<Card post={post} />
