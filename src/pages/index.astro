@@ -32,6 +32,24 @@ type BlogPost = CollectionEntry<'blog'>;
     }}
   />
 
+	<section class="hero-section text-center">
+		<div class="container col-lg-8 col-md-10 px-3">
+			<h1 class="fw-bold display-5 mb-3">
+				Selamat datang di <span class="text-primary">ZtackDev</span>
+			</h1>
+			<p class="lead text-muted">
+				Tempat Anda menemukan <span class="fw-semibold">berita terbaru</span>, 
+				tutorial, dan sumber daya tentang teknologi dan pengembangan perangkat lunak.  
+				<br />
+				<br />
+				Temukan informasi terkini tentang berbagai bahasa pemrograman, framework, library, cheat sheet, habit,
+				hingga best practice dalam pengembangan perangkat lunak.
+			</p>
+		</div>
+	</section>
+
+
+
 	<Slider post={blogPosts.filter((post) => post.data.isPinned)} />
 
 	<main class="container mt-content col-md-10 col-xl-8 offset-md-1 offset-xl-2">
@@ -49,5 +67,16 @@ type BlogPost = CollectionEntry<'blog'>;
 			}
 		</div>
 	</main>
+
+	<style>
+	.hero-section {
+			background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+			padding-top: 120px;
+			padding-bottom: 40px;
+			border-bottom: 1px solid #e9ecef;
+			margin-bottom: -55px
+		}
+	</style>
+
 
 </Layout>
